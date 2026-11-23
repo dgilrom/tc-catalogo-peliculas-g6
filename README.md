@@ -2,7 +2,7 @@
 
 > Renombrad este fichero a `README.md` y completad las partes entre `<...>`.
 
-**Equipo:** <nombre 1>, <nombre 2>, <nombre 3>, <nombre 4>
+**Equipo:** <Daniel Gil>, <Constante Fernandez>, <Daría Bayko>
 
 Catálogo de películas enriquecido a partir del dataset MovieLens: análisis con Pandas, sinopsis y web oficial desde la API de TMDB, y sinopsis en español generadas con Gemini.
 
@@ -10,17 +10,28 @@ Catálogo de películas enriquecido a partir del dataset MovieLens: análisis co
 
 | Persona | Rol | Notebook / tarea |
 |---|---|---|
-| <nombre> | <rol> | <notebook> |
+| Daniel Gil | Repo y datos | 01_ingesta_limpieza |
+| Constante Fernandez | Análisis | 02_analisis|
+| Daría Bayko | APIs e IA generativa | 03_tmdb y 04_gemini |
 
 ## Instalación
 
 ```bash
-git clone <URL del repo>
-cd <carpeta>
+```bash
+git clone https://github.com/dgilrom/tc-catalogo-peliculas-g6.git
+cd tc-catalogo-peliculas-g6
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+
+# Activar el entorno
+venv\Scripts\activate           # Windows (PowerShell / CMD)
+source venv/bin/activate        # Mac / Linux
+
 pip install -r requirements.txt
-cp .env.example .env            # y rellenad las claves
+
+# Crear el .env a partir de la plantilla y rellenar las claves
+copy .env.example .env          # Windows
+cp .env.example .env            # Mac / Linux
+```
 ```
 
 ## Claves necesarias
